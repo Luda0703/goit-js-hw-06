@@ -37,7 +37,7 @@ const sixthItem = document.createElement("li");
 sixthItem.textContent = 'Condiments';
 sixthItem.className = ("item");
 list.append(sixthItem);
-//list.append(...allIngredients);
+
 console.log(list)
 
 
