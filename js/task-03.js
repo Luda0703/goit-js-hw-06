@@ -31,12 +31,3 @@ console.log(gallery)
 
 
 
-// const list = document.querySelector(".gallery");
-
-// const markup = images
-//   .map((img) => `<li class="list-item new">${img}</li>`)
-//   .join("");
-
-// list.insertAdjacentHTML("beforeend", markup);
-// //list.insertAdjacentHTML("beforebegin", "<h2>Popular technologies</h2>");
-// console.log(list)
