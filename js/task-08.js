@@ -26,26 +26,4 @@ function handleFormSubmit(event) {
     }
   }
 
-// function onFormSabmit(event) {
-//     event.preventDefault();
-
-//     const formData = new FormData(event.currentTarget);
-
-    // formData.forEach((value, name) => {
-       
-    //     const message = "всі поля повинні бути заповнені";
-    //     alert(message);
-       
-    //     console.log('onFormSubmit -> name', name);
-    //     console.log('onFormSubmit -> value', value);
-        
-    //     event.currentTarget.reset();
-    // })
-    
-
-    // const formElements = event.currentTarget.elements;
-    // const mail = formElements.email.value;
-    // const password = formElements.password.value;
-
-    // console.log(mail, password);
 
