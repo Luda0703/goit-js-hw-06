@@ -18,38 +18,55 @@ const ingredients = [
   'Condiments',
 ];
 
-const list = document.querySelector("ul#ingredients");
-const firstItem = document.createElement("li");
-firstItem.textContent = "Potatoes";
-firstItem.className = ("item");
-list.append(firstItem);
+const listIngradients = document.querySelector('#ingredients');
 
-const secondItem = document.createElement("li");
-secondItem.textContent = 'Mushrooms';
-secondItem.className = ("item");
-list.append(secondItem);
+const makeListIngradients = ingredients => {
+  return ingredients.map((ingredient) => {
+    const listElement= document.createElement('li');
+    listElement.classList.add('item');
+    listElement.textContent = ingredient;
+return listElement;
+  });
+}
+const elements = makeListIngradients(ingredients)
+console.log(elements)
+listIngradients.append(...elements)
+console.log(listIngradients)
 
-const thirdItem = document.createElement("li");
-thirdItem.textContent = 'Garlic';
-thirdItem.className = ("item");
-list.append(thirdItem);
 
-const fourthItem = document.createElement("li");
-fourthItem.textContent = 'Tomatos';
-fourthItem.className = ("item");
-list.append(fourthItem);
 
-const fifthItem = document.createElement("li");
-fifthItem.textContent = 'Herbs';
-fifthItem.className = ("item");
-list.append(fifthItem);
+// const list = document.querySelector("ul#ingredients");
+// const firstItem = document.createElement("li");
+// firstItem.textContent = "Potatoes";
+// firstItem.className = ("item");
+// list.append(firstItem);
 
-const sixthItem = document.createElement("li");
-sixthItem.textContent = 'Condiments';
-sixthItem.className = ("item");
-list.append(sixthItem);
+// const secondItem = document.createElement("li");
+// secondItem.textContent = 'Mushrooms';
+// secondItem.className = ("item");
+// list.append(secondItem);
 
-console.log(list)
+// const thirdItem = document.createElement("li");
+// thirdItem.textContent = 'Garlic';
+// thirdItem.className = ("item");
+// list.append(thirdItem);
+
+// const fourthItem = document.createElement("li");
+// fourthItem.textContent = 'Tomatos';
+// fourthItem.className = ("item");
+// list.append(fourthItem);
+
+// const fifthItem = document.createElement("li");
+// fifthItem.textContent = 'Herbs';
+// fifthItem.className = ("item");
+// list.append(fifthItem);
+
+// const sixthItem = document.createElement("li");
+// sixthItem.textContent = 'Condiments';
+// sixthItem.className = ("item");
+// list.append(sixthItem);
+
+// console.log(list)
 
 
 
